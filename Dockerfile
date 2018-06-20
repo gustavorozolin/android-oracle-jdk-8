@@ -64,8 +64,6 @@ RUN echo "y" | android update sdk -u -a --filter android-27 && \
     echo "y" | android update sdk -u -a --filter android-18 && \
     echo "y" | android update sdk -u -a --filter build-tools-18.1.1 && \
     echo "y" | android update sdk -u -a --filter build-tools-18.1.0 && \
-    echo "y" | android update sdk -u -a --filter build-tools-18.0.1 && \
-    echo "y" | android update sdk -u -a --filter android-17 && \
-    echo "y" | android update sdk -u -a --filter build-tools-17 && \
+    echo "y" | android update sdk -u -a --filter build-tools-18.0.1 
    
        

@@ -15,12 +15,8 @@ ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}
 RUN yes | sdkmanager --licenses
 
 RUN sdkmanager "tools" \ 
-               "platform-tools" \ 
-               "extra-android-support" \
-               "extra-android-m2repository" \
-               "extra-google-google_play_services" \
-               "extra-google-m2repository" \
-               "extra-google-analytics_sdk_v2"
+               "platform-tools" 
+             
 
 RUN yes | sdkmanager "platforms;android-27"
 RUN yes | sdkmanager "build-tools;27.0.3" 
@@ -48,7 +44,6 @@ RUN yes | sdkmanager "build-tools;22.0.0"
 RUN yes | sdkmanager "platforms;android-21"
 RUN yes | sdkmanager "build-tools;21.1.2"
 RUN yes | sdkmanager "build-tools;21.1.1"
-RUN yes | sdkmanager "build-tools;21.1"
 RUN yes | sdkmanager "build-tools;21.0.2"
 RUN yes | sdkmanager "build-tools;21.0.1"
 RUN yes | sdkmanager "build-tools;21.0.0"
@@ -59,7 +54,6 @@ RUN yes | sdkmanager "build-tools;19.1.0"
 RUN yes | sdkmanager "build-tools;19.0.3"
 RUN yes | sdkmanager "build-tools;19.0.2"
 RUN yes | sdkmanager "build-tools;19.0.1"
-RUN yes | sdkmanager "build-tools;19"
 RUN yes | sdkmanager "platforms;android-18"
 RUN yes | sdkmanager "build-tools;18.1.1"
 RUN yes | sdkmanager "build-tools;18.1.0"
